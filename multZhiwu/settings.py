@@ -96,8 +96,13 @@ MYSQL_PASSWD = '123'
 # Enables scheduling storing requests queue in redis.
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 
+REDIS_HOST = '127.0.0.1'
+
+REDIS_PORT = 6379
+
 # Ensure all spiders share same duplicates filter through redis.
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+SCHEDULER_PERSIST = True
 
 
 # Store scraped item in redis for post-processing.
